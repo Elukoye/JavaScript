@@ -6,11 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Virtual Pet Rock</title>
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript">
+    function touchImg(){
+      var userName = prompt("What is your name?:" ,"Enter your name here:");
+      if(userName){
+        alert("It's good to meet you  "  + userName + ".");
+        document.getElementById("picImg").src = "img_1.png";
+      }
+    }
+    
+  </script>
 </head>
 
-<body>
+<body onload="alert('Hello, am your Marshmellow,ask me anything');">
   <div class="rock_img">
-    <img src="img_1.png" alt="vector illustration" width="50%" height="70%">
+    <img  id="picImg" src="img_1.png" alt="vector_img" width="50%" height="70%" style="cursor: pointer;"
+    onclick="touchImg()">
   </div>
     
 </body>
