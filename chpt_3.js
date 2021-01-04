@@ -21,7 +21,8 @@ var test = 1 ;
 doIt(test);
 console.log(test)
 
-function testParam(name,num){
-    console.log(name,num)
+function testParam(x){
+    var x = 2
 }
-testParam(7,"mei")
+var x = 1;
+testParam(x)
